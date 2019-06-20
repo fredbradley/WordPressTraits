@@ -5,16 +5,15 @@ namespace FredBradley\WordPressTraits\Traits;
 abstract class Shortcode
 {
 
-    public static function setup()
+    public function __construct(array $config = NULL)
     {
-        $init = new static;
-        $init->init();
+        $this->config = $config;
     }
 
-    private function init()
+    abstract public function render($atts, $content = NULL);
+
+    public function init()
     {
         add_shortcode($this->tag, array($this, 'render'));
     }
-
-    abstract public function render($atts, $content = null);
 }
