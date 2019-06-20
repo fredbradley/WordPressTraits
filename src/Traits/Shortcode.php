@@ -5,7 +5,7 @@ namespace FredBradley\WordPressTraits\Traits;
 abstract class Shortcode
 {
 
-    protected static function setup()
+    public static function setup()
     {
         $init = new static;
         $init->init();
