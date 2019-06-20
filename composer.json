@@ -1,0 +1,16 @@
+{
+  "name": "fredbradley/word-press-traits",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Fred Bradley",
+      "email": "hello@fredbradley.co.uk"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FredBradley\\WordPressTraits\\": "src"
+    }
+  },
+  "require": {}
+}
